@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <div id="d1">This is First</div>
+        <div id="d2">This is Second</div>
+        <div id="d3">This is Third</div>
+        <button onclick="lw()">Swap</button>
+        <br>
+        <hr>
+        <input id="lol" type="text"/>
+        <button onclick="add()">Add</button>
+        <br>
+        <div id="new"></div>
+
+        
+
+        <script>
+            function lw(){
+                x=document.getElementById('d1')
+                y=document.getElementById('d2')
+                temp = x.innerHTML
+                x.innerHTML = y.innerHTML
+                y.innerHTML = temp
+            }
+            function add(){
+                document.getElementById('new').innerHTML = document.getElementById('lol').value
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <body>
+
+        <input id="in" onkeyup="lw()"/>
+        <div id="cont" onclick="go()">Hey</div>
+
+        <script>
+            function lw(){
+                document.getElementById('cont').innerHTML = document.getElementById('in').value
+            }
+            function go(){
+                document.location = "https://" + document.getElementById('cont').innerHTML
+            }
+        </script>
+    </body>
+</html>
